@@ -1,0 +1,145 @@
+header { 
+    background-color: #000;
+    color: #fff;
+}
+
+.wrapper { 
+    max-width: 940px;
+    place-items: center;
+}
+
+header { 
+    display: flex;
+    flex-direction: row;
+}
+
+header span {
+    justify-content: flex-start;
+}
+
+header nav {
+    justify-content: flex-end;
+}
+
+nav {
+    display: flex; 
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 2px;
+}
+
+#hero {
+    height: 600px; 
+    background-image: url('../images/hands-typing.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 { 
+    max-width: 60%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: #000;
+    color: #fff;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#about-me {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#about-me p {
+    grid-column-start: 1; 
+    grid-column-end: 3; 
+}
+
+#about-me img {
+    justify-self: end;}
+
+
+#services {
+    background-color: #fafafa;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+}
+
+h2 {
+    max-width: fit-content;
+    text-align: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    margin: auto;
+    align-self: flex-end;
+    padding: 10px 20px;
+    background-color: #000;
+    border: 2px solid #000;
+    color:#fafafa;
+}
+
+.btn:hover {
+    background-color: #fafafa;
+    color: #000;
+}
+
+#work p {
+    max-width: fit-content;
+    text-align: center;
+}
+
+#work {
+    display: grid; 
+    grid-template-columns: repeat(6, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "d1 d1 d1 d2 d2 d2"
+                        "d3 d3 d4 d4 d5 d5";
+}
+
+.portfolio {
+    display: grid; 
+    object-fit: contain;
+    grid-template-columns: repeat(6, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "d1 d1 d1 d2 d2 d2"
+                        "d3 d3 d4 d4 d5 d5";
+}
+
+#work img:nth-child(1) {
+  grid-area: d1; 
+}
+
+#work img:nth-child(2) {
+  grid-area: d2; 
+}
+
+#work img:nth-child(3) {
+  grid-area: d3; 
+}
+
+#work img:nth-child(4) {
+  grid-area: d4; 
+}
+
+#work img:nth-child(5) {
+  grid-area: d5; 
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
